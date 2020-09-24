@@ -6,10 +6,13 @@ import router from './router'
 import axios from 'axios'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import msg from '@/utils/msg'
+import VueRouter from 'vue-router';
 
 Vue.use(ElementUI);
 axios.defaults.baseURL = 'http://localhost:3000'
 Vue.config.productionTip = false
+Vue.prototype.$msg = msg
 
 /* eslint-disable no-new */
 new Vue({
